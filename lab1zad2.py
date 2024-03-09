@@ -8,7 +8,7 @@ def copy_to_png_file(filename):
     print("File does not exist") 
  
 if __name__ == '__main__': 
-  filename = input("Give a filename ") 
+  filename = input("Give a filename: ") 
   copy_to_png_file(filename) 
 
  
