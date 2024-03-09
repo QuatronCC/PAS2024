@@ -10,7 +10,7 @@ def scan_ports(server_address):
 
         # Define range of ports to scan
         start_port = 1
-        end_port = 1024
+        end_port = 108
 
         for port in range(start_port, end_port + 1):
 
