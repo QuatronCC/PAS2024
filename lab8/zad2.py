@@ -3,7 +3,7 @@ import imaplib
 def check_inbox(username, password):
     try:
         # Connect to the IMAP server
-        imap_server = imaplib.IMAP4('')
+        imap_server = imaplib.IMAP4('https://212.182.24.27:443')
 
         # Login to the server
         imap_server.login(username, password)
@@ -25,7 +25,7 @@ def check_inbox(username, password):
 
 if __name__ == "__main__":
     # Provide your IMAP server credentials
-    username = "https://212.182.24.27:443"
+    username = "pasinf2017@infumcs.edu"
     password = "P4SInf2017"
 
     check_inbox(username, password)
