@@ -1,0 +1,24 @@
+1. Przeważnie, połączenie przez UDP jest szybsze niż TCP.
+2.
+UDP:
+Brak ustanawiania połączenia: UDP jest bezpołączeniowy, więc nie wymaga wymiany komunikatów w celu ustanowienia połączenia przed przesyłaniem danych.
+Mniejsze obciążenie: UDP ma mniejsze obciążenie w porównaniu do TCP, ponieważ nie gwarantuje dostarczenia danych, ich kolejności ani sprawdzania błędów na poziomie protokołu.
+TCP:
+Ustanawianie połączenia: TCP wymaga trójstronnej wymiany komunikatów (handshake) w celu ustanowienia połączenia.
+Funkcje niezawodności: TCP zawiera mechanizmy do sprawdzania błędów, potwierdzania odbioru pakietów i ponownego przesyłania utraconych pakietów, co zwiększa obciążenie.
+3.
+TCP:
+Zalety:
+Niezawodność: Zapewnia, że dane są dostarczane poprawnie i w kolejności.
+Sprawdzanie błędów: Automatycznie obsługuje wykrywanie i korekcję błędów.
+Kontrola przepływu: Zarządza przepływem danych w celu zapobiegania zatorom.
+Wady:
+Wyższy narzut: Większe obciążenie związane z zarządzaniem połączeniem i funkcjami niezawodności.
+Wolniejszy: Wolniejszy w porównaniu do UDP z powodu dodatkowych mechanizmów zapewniających niezawodność.
+UDP:
+Zalety:
+Szybszy: Niższe opóźnienie z powodu braku ustanawiania połączenia i minimalnego narzutu.
+Lekki: Nadaje się do zastosowań, które mogą obsłużyć utratę pakietów (np. transmisja na żywo, gry online).
+Wady:
+Niezawodność: Brak gwarancji dostarczenia pakietów lub ich zachowania kolejności.
+Brak kontroli przepływu: Może prowadzić do zatłoczenia sieci, jeśli jest używany niewłaściwie.
